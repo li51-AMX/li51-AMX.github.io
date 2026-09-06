@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Yuntong Li, a University of Pennsylvania electrical engineering graduate student focused on ASIC physical design, RTL, verification, and silicon validation."
+    />
+    <meta name="theme-color" content="#09110f" />
+    <meta property="og:title" content="Yuntong Li — Digital IC Design" />
+    <meta
+      property="og:description"
+      content="ASIC physical design, RTL-to-GDSII tapeout, silicon validation, and autonomous systems."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://li51-amx.github.io/" />
+    <title>Yuntong Li — Digital IC Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yuntong Li",
+        "url": "https://li51-amx.github.io/",
+        "sameAs": [
+          "https://github.com/li51-AMX",
+          "https://www.linkedin.com/in/yuntong-li/"
+        ],
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania" },
+          { "@type": "CollegeOrUniversity", "name": "China University of Geosciences (Wuhan)" }
+        ],
+        "knowsAbout": [
+          "ASIC Physical Design",
+          "RTL Design",
+          "SystemVerilog",
+          "Static Timing Analysis",
+          "Silicon Validation"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Yuntong Li, back to top">
+        <span class="wordmark-mark" aria-hidden="true">YL</span>
+        <span>Yuntong Li</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="https://github.com/li51-AMX" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> M.S.E. EE @ Penn · May 2027</p>
+          <h1>I build digital systems from <span>RTL to silicon.</span></h1>
+          <p class="hero-lede">
+            Electrical engineering graduate student focused on ASIC physical design,
+            digital IC implementation, verification, and post-silicon validation.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/yuntong-li/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <aside class="chip-card reveal" aria-label="Current focus">
+          <div class="chip-card-top">
+            <span>Current focus</span>
+            <span class="mono">TSMC 180 nm</span>
+          </div>
+          <div class="chip-visual" aria-hidden="true">
+            <div class="chip-core">
+              <span>4 × 4</span>
+              <small>MATMUL</small>
+            </div>
+          </div>
+          <h2>From tapeout to the bench</h2>
+          <p>
+            A 4-bit 4×4 matrix-multiplication accelerator, signed off and taped out.
+            Post-silicon validation planning is now underway.
+          </p>
+          <a href="https://github.com/li51-AMX/matmul-4x4-accelerator-tsmc180" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+        </aside>
+      </section>
+
+      <section class="metrics section-shell" aria-label="Selected results">
+        <article class="metric reveal">
+          <strong>100 MHz</strong>
+          <span>signoff target</span>
+        </article>
+        <article class="metric reveal">
+          <strong>+493 ps</strong>
+          <span>post-route WNS</span>
+        </article>
+        <article class="metric reveal">
+          <strong>680 × 670 µm</strong>
+          <span>accelerator core</span>
+        </article>
+        <article class="metric reveal">
+          <strong>1st place</strong>
+          <span>Penn–CMU F1/10 final</span>
+        </article>
+      </section>
+
+      <section id="work" class="section section-shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects at the hardware–software boundary.</h2>
+          </div>
+          <p>Individual projects spanning silicon implementation, custom circuits, autonomy, and learning-based optimization.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-index mono">01 / FEATURED</div>
+            <div class="project-body">
+              <p class="project-kicker">ASIC · RTL-to-GDSII · Tapeout</p>
+              <h3>4×4 Matrix-Multiplication Accelerator</h3>
+              <p>
+                Designed a 4-bit accelerator with SPI loading and readback, register-based
+                matrix storage, an FSM-controlled dot-product datapath, and a 10-bit accumulator.
+                Completed verification, synthesis, floorplanning, CTS, routing, RC extraction,
+                and DRC/LVS/antenna signoff in TSMC 180 nm.
+              </p>
+              <ul class="tag-list" aria-label="Tools used">
+                <li>SystemVerilog</li><li>Xcelium</li><li>Genus</li><li>Innovus</li><li>Calibre</li>
+              </ul>
+            </div>
+            <a class="project-link" href="https://github.com/li51-AMX/matmul-4x4-accelerator-tsmc180" target="_blank" rel="noreferrer" aria-label="Open matrix accelerator repository">↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-index mono">02</div>
+            <div class="project-body">
+              <p class="project-kicker">Autonomous systems · ROS</p>
+              <h3>F1/10 Autonomous Racing</h3>
+              <p>
+                Built and tuned an autonomous racing stack across three races, integrating
+                perception, path planning, and closed-loop control. Finished first in the
+                final joint Penn–CMU race.
+              </p>
+              <ul class="tag-list"><li>ROS</li><li>Python</li><li>LiDAR</li><li>Controls</li></ul>
+            </div>
+            <a class="project-link" href="https://github.com/li51-AMX/RoboRacer_Final_Race" target="_blank" rel="noreferrer" aria-label="Open F1/10 repository">↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-index mono">03</div>
+            <div class="project-body">
+              <p class="project-kicker">Memory design · Full custom</p>
+              <h3>16×4 Synchronous 6T SRAM</h3>
+              <p>
+                Built a hierarchical SRAM macro with decoding, wordline control, write drivers,
+                precharge, and sensing. Verified schematic and layout behavior with DRC/LVS and
+                timing simulations.
+              </p>
+              <ul class="tag-list"><li>Virtuoso</li><li>6T SRAM</li><li>DRC/LVS</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-index mono">04</div>
+            <div class="project-body">
+              <p class="project-kicker">Analog IC · Wideband front end</p>
+              <h3>1.013 GHz Transimpedance Amplifier</h3>
+              <p>
+                Iterated transistor sizing, biasing, and compensation in Cadence Virtuoso,
+                evaluating bandwidth, transimpedance gain, stability, noise, and power tradeoffs.
+              </p>
+              <ul class="tag-list"><li>Virtuoso</li><li>AC/Transient</li><li>Corner analysis</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-index mono">05 / IN PROGRESS</div>
+            <div class="project-body">
+              <p class="project-kicker">Learning to optimize · MIQP</p>
+              <h3>Mixed-Integer Footstep Control</h3>
+              <p>
+                Reproduced a learning-to-optimize codebase, built a task-specific dataset,
+                modified the model for a mixed-integer footstep-control setting, and completed
+                initial experiments. Evaluation is ongoing.
+              </p>
+              <ul class="tag-list"><li>PyTorch</li><li>Optimization</li><li>Dataset engineering</li></ul>
+            </div>
+            <a class="project-link" href="https://github.com/li51-AMX/L2O-MIQP-GPU" target="_blank" rel="noreferrer" aria-label="Open learning-to-optimize repository">↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-shell split-section">
+        <div class="section-heading compact reveal">
+          <div>
+            <p class="eyebrow">Experience &amp; education</p>
+            <h2>Built on rigorous implementation and measurement.</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date mono">2025—2027</div>
+            <div>
+              <p class="timeline-label">Education</p>
+              <h3>University of Pennsylvania</h3>
+              <p>M.S.E. in Electrical Engineering · GPA 3.90/4.00</p>
+              <p class="timeline-detail">Chip Design, Chip Measurements, Memory Design, Analog ICs, Computer Organization, Optimization, GNNs, and Applied Machine Learning.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date mono">JUL—AUG 2024</div>
+            <div>
+              <p class="timeline-label">Industry</p>
+              <h3>Test Engineering Intern</h3>
+              <p>Wuhan Sanfran Electronics Co., Ltd.</p>
+              <p class="timeline-detail">Created standards-based test plans, ran MTS/ATS regressions and 1,000-iteration communication stress tests, captured MCU-to-memory timing, and performed three-phase measurement-error calibration.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date mono">2021—2025</div>
+            <div>
+              <p class="timeline-label">Education</p>
+              <h3>China University of Geosciences (Wuhan)</h3>
+              <p>B.E. in Electronic Information Engineering · GPA 3.71/4.00</p>
+              <p class="timeline-detail">National Encouragement Scholarship, 2022 and 2024.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section section-shell about-section">
+        <div class="about-copy reveal">
+          <p class="eyebrow">About</p>
+          <h2>I care about the details that turn a design into working hardware.</h2>
+          <p>
+            My work spans digital architecture, implementation, signoff, and measurement.
+            I enjoy tracing failures across abstraction layers—from a protocol transaction or
+            state machine to timing closure, routing, or a waveform on the bench.
+          </p>
+          <p>
+            I am seeking 2027 new-grad opportunities in ASIC physical design, RTL/digital
+            design, design verification, silicon validation, and FPGA engineering.
+          </p>
+        </div>
+
+        <div class="skills-panel reveal">
+          <h3>Core toolkit</h3>
+          <div class="skill-group">
+            <span class="skill-label mono">DIGITAL</span>
+            <p>SystemVerilog · Verilog · RTL Design · FSMs · FPGA · C++</p>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label mono">PHYSICAL</span>
+            <p>Genus · Innovus · STA · CTS · P&amp;R · RC Extraction · Calibre</p>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label mono">CIRCUITS</span>
+            <p>Cadence Virtuoso · SRAM · Analog Simulation · DRC/LVS</p>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label mono">SYSTEMS</span>
+            <p>Python · PyTorch · ROS · Embedded Debug · Oscilloscopes</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-shell reveal">
+        <p class="eyebrow">Let's connect</p>
+        <h2>Interested in building reliable silicon together?</h2>
+        <p>Based in Philadelphia and open to 2027 new-grad engineering opportunities.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://www.linkedin.com/in/yuntong-li/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+          <a class="button button-secondary" href="https://github.com/li51-AMX" target="_blank" rel="noreferrer">Explore GitHub ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <p>© <span id="year"></span> Yuntong Li</p>
+      <p class="mono">DESIGNED FOR THE NEXT TAPEOUT</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
