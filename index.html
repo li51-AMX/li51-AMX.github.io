@@ -100,8 +100,9 @@
                 CTS, routing, extraction, and physical signoff.
               </p>
               <p class="result">
-                <strong>Result:</strong> +493 ps post-route WNS at 100 MHz; 680 × 670 µm core.
-                Post-silicon measurement planning is in progress.
+                <strong>Result:</strong> sign-off setup WNS 5.218 ns and hold WNS 0.113 ns at 100 MHz,
+                TNS 0 across all 639 paths; 72.18% density, 9.84 mW at 1.8 V, 680 × 670 µm core,
+                and clean Calibre DRC / LVS / antenna. Silicon testing runs in fall 2026.
               </p>
               <p class="tools">SystemVerilog, Xcelium, Genus, Innovus, Calibre</p>
               <a class="project-link" href="https://github.com/li51-AMX/matmul-4x4-accelerator-tsmc180" target="_blank" rel="noreferrer">Code and implementation details ↗</a>
@@ -128,16 +129,18 @@
           <article class="project">
             <div class="project-meta">
               <span>Memory Design</span>
-              <span>Full Custom</span>
+              <span>Transistor Level</span>
             </div>
             <div class="project-content">
               <h3>16×4 Synchronous 6T SRAM Macro</h3>
               <p>
-                Designed a hierarchical SRAM macro with address decoding, wordline control,
-                write drivers, precharge, and sensing. Verified schematic and layout behavior
-                through timing simulation, DRC, and LVS.
+                Designed a single-cycle SRAM macro at transistor level: 6T bitcell array,
+                4-to-16 decoder with wordline-enable gating, bitline precharge, differential
+                write drivers, and sense amplifier, sequenced by staged PRE / WE / WL / SE timing.
+                Verified all 16 wordlines in pre-layout simulation — 28.0 ps worst-case write
+                delay, 21.5 ps read delay, 197.4 µW.
               </p>
-              <p class="tools">Cadence Virtuoso, 6T SRAM, DRC/LVS</p>
+              <p class="tools">Cadence Virtuoso, Spectre, 6T SRAM</p>
             </div>
           </article>
 
